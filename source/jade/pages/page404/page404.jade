@@ -1,0 +1,14 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout-min
+
+block content
+    main.nopage
+        .content
+            span.number 404
+            p Запрашиваемая Вами страница не&nbsp;найдена! Возможно она была перемещена или неправильно введен ее&nbsp;адрес. Перейдите на&nbsp;главную страницу сайта.
+
+            a(href="").btn Перейти на главную
+
+    script(type="text/javascript" ) $(function () {$.pixlayout({src: "../../../img/temp/404.jpg",opacity: 0.5,top: 0,left: 0,center: false,clip: true,show: false});});

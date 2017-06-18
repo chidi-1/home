@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fnt/rouble-webfont.eot");
+  src: url("../fnt/rouble-webfont.eot?#iefix") format('embedded-opentype'), url("../fnt/rouble-webfont.woff2") format('woff2'), url("../fnt/rouble-webfont.woff") format('woff'), url("../fnt/rouble-webfont.ttf") format('truetype'), url("../fnt/rouble-webfont.svg#als_rublregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fnt/Lato/LatoRegular/LatoRegular.eot");
+  src: url("../fnt/Lato/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fnt/Lato/LatoRegular/LatoRegular.woff") format("woff"), url("../fnt/Lato/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fnt/Lato/LatoBold/LatoBold.eot");
+  src: url("../fnt/Lato/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fnt/Lato/LatoBold/LatoBold.woff") format("woff"), url("../fnt/Lato/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fnt/Lato/LatoLight/LatoLight.eot");
+  src: url("../fnt/Lato/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fnt/Lato/LatoLight/LatoLight.woff") format("woff"), url("../fnt/Lato/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+html * {
+  max-height: 999999px;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 960px;
+}
+body {
+  font-family: $fAcrom;
+  font-size: 14px;
+  color: #010101;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+}
+.page-wrap {
+  min-height: 100%;
+  position: relative;
+  min-width: 1200px;
+  overflow: hidden;
+}
+form,
+p,
+ul,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  list-style: none;
+}
+a img {
+  border: none;
+}
+input,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  color: #010101;
+  outline: none;
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  outline: none;
+  color: #2b3e69;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: $cGreen;
+}
+.wrapper {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+.clearfix:after,
+.section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.section {
+  position: relative;
+}
+.justifyed {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.width-wrap {
+  display: block;
+  margin: 0 auto;
+  width: 1140px;
+}
+ol,
+ul,
+.grid {
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -1px;
+}
+li,
+.grid-item {
+  line-height: normal;
+  letter-spacing: normal;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+}
+.hidden-block {
+  display: none !important;
+}
+.two--third {
+  width: 760px;
+}
+.roubl:after {
+  content: " o";
+  font-size: inherit;
+  color: inherit;
+  font-family: als_rublregular;
+  font-weight: inherit;
+}
+a,
+p,
+span,
+li,
+input,
+time,
+blockquote,
+textarea {
+  font-family: LatoRegular, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #010101;
+}
+a {
+  cursor: pointer;
+}
+h1 {
+  font-family: LatoRegular, sans-serif;
+  color: #010101;
+  font-size: 48px;
+  line-height: 73px;
+  text-align: left;
+  display: block;
+  font-weight: bold;
+}
+h2 {
+  font-family: LatoRegular, sans-serif;
+  color: #010101;
+  font-size: 30px;
+  display: block;
+  font-weight: bold;
+}

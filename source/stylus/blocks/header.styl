@@ -1,0 +1,313 @@
+.header
+  background $cGray_m
+  padding-top 20px
+
+  &--top
+    padding-bottom 23px
+
+  &--logo
+    display inline-block
+    vertical-align top
+
+    img
+      width 116px
+      height 64px
+
+  &--popup
+    display inline-block
+    vertical-align top
+    white-space nowrap
+
+    a
+      display inline-block
+      vertical-align top
+      white-space nowrap
+
+      .text
+        display inline-block
+        vertical-align top
+
+        span
+          display inline
+          white-space normal
+          font-size 15px
+          font-family $fTrebuchet
+          font-weight bold
+          text-transform uppercase
+
+      .icon
+        display inline-block
+        vertical-align top
+
+    &-metering
+      margin-right 92px
+      margin-left 102px
+      padding-top 16px
+
+      .text
+        text-align right
+        padding-top 2px
+        margin-right 4px
+
+        span
+          color $cGreen
+          border-bottom 1px dashed $cGreen
+          text-align right
+
+      .icon
+        width 77px
+        height 45px
+        background url(../img/icon--roulet.png) no-repeat 0 0
+
+    &-call
+      padding-top 16px
+
+      .text
+        margin-top 2px
+
+        span
+          color $cOrange
+          border-bottom 1px dashed $cOrange
+
+      .icon
+        width 46px
+        height 48px
+        background url(../img/icon--phone.png) no-repeat 0 0
+        margin-top -3px
+
+  &--schedule
+    display inline-block
+    vertical-align top
+    text-align right
+    padding-top 11px
+
+    a
+      display block
+      color $cWhite
+      font-size 24px
+      font-weight bold
+      margin-bottom 17px
+
+    span
+      display block
+      text-align right
+      color $cWhite
+      text-transform uppercase
+
+      i
+        color $cOrange
+
+  &--bottom
+    background $cGray_d
+
+    ul
+      margin-right 18px
+
+      li
+        border-right 1px solid #544a48
+        position relative
+
+        &:hover
+          .dropdown
+            opacity 1
+            pointer-events auto
+
+          span.has-dropdown:after,
+          a.has-dropdown:after
+            opacity 1
+
+        &:last-child
+          border-right none
+
+        &:nth-child(3),
+        &:nth-child(4)
+          .dropdown
+            left 0
+
+        &:nth-child(5)
+          .dropdown
+            left 50%
+            transform translateX(-50%)
+
+        &:nth-child(6),
+        &:nth-child(7)
+          .dropdown
+            right 0
+
+        &.icon
+          border-right none
+          display inline-block
+          vertical-align top
+          width 50px
+          height 50px
+          background $cGreen url("../img/icon--menu.png") no-repeat 50% 50%
+
+        a,
+        span
+          display block
+          height 50px
+          font-size 15px
+          font-weight bold
+          text-transform uppercase
+          transition all 0.2s ease-in-out
+          color $cWhite
+          line-height 50px
+          padding 0 35px
+          position relative
+          z-index 20
+          background $cGray_d
+
+        span.has-dropdown:after,
+        a.has-dropdown:after
+          position absolute
+          content ""
+          z-index 10
+          width 0
+          height 0
+          border-style solid
+          border-width 16px 16px 0 16px
+          border-color #3b3433 transparent transparent transparent
+          bottom -16px
+          left 50%
+          margin-left -16px
+          opacity 0
+          transition all 0.2s ease-in-out
+
+        a:hover,
+        span
+          color #afaaa9
+
+        .dropdown
+          position absolute
+          background #605653
+          padding 40px
+          box-shadow 0 0 10px rgba(0,0,0,0.5)
+          top 50px
+          opacity 0
+          transition opacity 0.2s ease-in-out
+          pointer-events none
+          z-index 10
+
+          ul.two-column
+            column-count 2
+            column-gap 40px
+
+          ul.three-column
+            column-count 3
+            column-gap 40px
+
+          ul.doors
+            li
+              width 250px
+
+          li
+            display inline-block
+            vertical-align top
+            width 210px
+            border-right none
+            border-bottom 1px solid $cBlack
+            padding 8px 0
+
+            span,
+            a
+              display block
+              font-size 15px
+              line-height 18px
+              color $cWhite
+              padding 0 0 0 5px
+              height auto
+              text-transform none
+              background transparent
+
+              &:after
+                display none
+
+            span
+              color #87807e
+              position relative
+
+              &:before
+                position absolute
+                content ""
+                background #87807e
+                width 9px
+                height 9px
+                border-radius 9px
+                left -16px
+                top 50%
+                margin-top -4px
+
+.breadcrumbs
+  display block
+
+  ul
+    li
+      display inline-block
+      vertical-align top
+      margin-right 25px
+      position relative
+
+      &:after
+        position absolute
+        content ""
+        width 6px
+        height 12px
+        background url(../img/icon--right-gray.png) no-repeat 0 0
+        right -18px
+        top 3px
+
+      &:last-child
+        &:after
+          display none
+
+      a
+        display block
+        color $cBlack
+
+      span
+        display block
+        color #605653
+
+.pagination
+  text-align center
+
+  li
+    display inline-block
+    vertical-align top
+    margin 0 10px
+
+    span,
+    a
+      width 30px
+      height 30px
+      color $cWhite
+      font-size 24px
+      font-weight bold
+      font-family $fTrebuchet
+      text-align center
+      line-height 30px
+      display block
+
+    span
+      background $cGray_l
+
+    a
+      background $cGreen
+
+      &.pagination-prev
+        background url(../img/icon--left-gray-pagination.png) no-repeat 50% 50%
+      &.pagination-next
+        background url(../img/icon--right-gray-pagination.png) no-repeat 50% 50%
+
+
+.star
+  li
+    display inline-block
+    vertical-align top
+    margin-right 5px
+    width 16px
+    height 16px
+    background url(../img/icon--star.png) no-repeat 0 0
+
+
+

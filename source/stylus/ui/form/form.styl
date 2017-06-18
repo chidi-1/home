@@ -1,0 +1,58 @@
+.main-form
+  display block
+
+  .inp
+    display block
+    width 100%
+    padding-left 17px
+    background $cWhite
+    height 42px
+    border 1px solid $cWhite
+    border-radius 6px
+    margin-bottom 20px
+    font-size 14px
+
+  .inp::-webkit-input-placeholder
+    color $cGray_l
+    font-size 12px
+  .inp::-moz-placeholder
+    color $cGray_l
+    font-size 12px
+  .inp:-moz-placeholder
+    color $cGray_l
+    font-size 12px
+  .inp:-ms-input-placeholder
+    color $cGray_l
+    font-size 12px
+
+  textarea.inp
+    height 64px
+    padding-top 10px
+    resize none
+
+  .inp:focus::-webkit-input-placeholder
+    color transparent
+  .inp:focus::-moz-placeholder
+    color transparent
+  .inp:focus:-moz-placeholder
+    color transparent
+  .inp:focus:-ms-input-placeholder
+    color transparent
+
+  .btn
+    margin-top 29px
+
+  .inp-file
+    display inline-block
+    vertical-align top
+    width 56px
+    height 44px
+    background $cGray_l url(../img/icon--file-download.png) no-repeat 50% 50%
+    cursor pointer
+
+    input
+      opacity 0
+      width 56px
+      height 44px
+      cursor pointer
+      display block

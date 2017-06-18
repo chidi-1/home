@@ -1,0 +1,93 @@
+.item
+  .slider-item
+    display block
+    position relative
+
+    .owl-dots
+      position absolute
+      left 0
+      right 0
+      bottom 10px
+      text-align center
+
+      .owl-dot
+        display inline-block
+        vertical-align top
+        width 20px
+        height 20px
+        border-radius 20px
+        border 1px solid $cGray_m
+        background $cWhite
+        margin 0 3px
+        position relative
+
+        &:after
+          position absolute
+          content ""
+          top 4px
+          right 4px
+          bottom 4px
+          left 4px
+          border-radius 20px
+          background $cGray_l
+
+        &.active
+          &:after
+            background $cGray_m
+
+  &--price
+    display block
+    text-align right
+    color $cGray_m
+    font-size 20px
+    line-height 24px
+    font-weight bold
+    padding-top 12px
+
+    i
+      color $cOrange
+      display inline
+      padding-left 79px
+      font-size 30px
+
+  &--params
+    padding-bottom 52px
+
+    li
+      display block
+      margin-bottom 5px
+
+      span
+        color $cGray_m
+        font-size 16px
+
+  &--btns
+    a
+      display inline-block
+      vertical-align top
+      border-radius 0
+      padding 14px 0
+
+  &--data
+    width 100%
+
+    tr
+      &:nth-child(odd)
+        background $cGray_l
+
+      &:nth-child(even)
+        td
+          height 34px
+
+      td
+        height 38px
+        color $cBlack
+
+      td.title
+        width 225px
+        padding-left 20px
+        font-weight bold
+
+  .btn.btn-border
+    min-width 135px
+    padding 6px 15px

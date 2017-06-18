@@ -1,0 +1,15 @@
+.popup-wrap
+    h2.margin-bottom-50 Вызов
+        br
+        ="замерщика"
+
+    form(action="" method="post").main-form.popup-note
+        input(type="text" name="name" placeholder="Имя").inp.required.margin-bottom-20
+        input(type="text" name="mail" placeholder="Адрес").inp.required.inp-mail.margin-bottom-20
+        input(type="text" name="phone" placeholder="Телефон").inp.required.inp-phone.margin-bottom-50
+
+        a(href="").js--form-submit.btn Отправить
+
+        a(href="../pagePopup/pagePopup-sended.html" class="fancybox.ajax").fancy.js--form-sended
+
+    script(type="text/javascript" ) $(function () {$('.inp-phone').mask('+7(999)999-99-99')});

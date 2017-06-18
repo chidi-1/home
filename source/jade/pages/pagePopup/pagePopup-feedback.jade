@@ -1,0 +1,13 @@
+.popup-wrap
+    h2.margin-bottom-50 Отзыв
+        br
+        ="о компании"
+
+    form(action="" method="post").main-form.popup-note
+        input(type="text" name="name" placeholder="Имя").inp.required.margin-bottom-20
+        input(type="text" name="mail" placeholder="E-mail").inp.required.inp-mail.margin-bottom-20
+        textarea(name="message" placeholder="Сообщение").inp.required.margin-bottom-50
+
+        a(href="").js--form-submit.btn Отправить
+
+        a(href="../pagePopup/pagePopup-sended-feedback.html" class="fancybox.ajax").fancy.js--form-sended

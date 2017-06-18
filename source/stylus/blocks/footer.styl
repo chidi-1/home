@@ -1,0 +1,104 @@
+.psevdofooter
+  display block
+  height 385px
+
+.footer
+  height 385px
+  position absolute
+  left 0
+  right 0
+  bottom 0
+
+  &-top
+    padding 36px 0
+    background $cGray_m
+
+  &-bottom
+    background $cGray_d
+    padding 37px 0 41px
+
+    .flex-between
+      align-items center
+
+    span
+      display block
+      color #817977
+      margin-bottom 8px
+
+      &:last-child
+        margin-bottom 0
+
+      a
+        color #817977
+        font-style italic
+
+  span.title
+    display block
+    color $cWhite
+    font-size 15px
+    line-height 18px
+    font-weight bold
+    text-transform uppercase
+    margin-bottom 22px
+
+  &--links
+    display inline-block
+    vertical-align top
+
+    ul
+      li
+        display block
+        margin-bottom 8px
+
+        &:last-child
+          margin-bottom 0
+
+        a
+          display block
+          color $cWhite
+
+          &:hover
+            text-decoration underline
+
+        span
+          display block
+          color $cGray_l
+
+  &--contacts
+    display inline-block
+    vertical-align top
+    padding-left 55px
+    border-left 1px solid $cGray_l
+
+    &-phone
+      padding-left 80px
+      margin-top -4px
+      padding-bottom 16px
+      position relative
+
+      &:before
+        position absolute
+        content ""
+        width 46px
+        height 50px
+        background url(../img/icon--phone-device.png) no-repeat 0 0
+        left -2px
+        top 2px
+
+      a
+        display block
+        font-size 18px
+        line-height 24px
+        color $cWhite
+
+    span
+      display block
+      color $cWhite
+      line-height 26px
+      margin-bottom 13px
+
+      a
+        color $cWhite
+
+      &:last-child
+        margin-bottom 0

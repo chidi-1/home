@@ -1,0 +1,66 @@
+block vars
+    - var title='Title'
+
+extends ../../partials/layout
+
+block content
+
+    section.breadcrumbs.margin-bottom-20
+        .width-wrap
+            ul
+                li
+                    a(href="") Главная
+                li
+                    span Контакты
+
+    main.margin-bottom-150
+        .width-wrap
+            h1.margin-bottom-40 Контакты
+
+            .flex-between
+                .one-half.margin-bottom-60
+                    table(border="0" cellpadding="0" cellspacing="0").contacts--table
+                        tr
+                            td.title Адрес:
+                            td Москва, Каширское шоссе, д.&nbsp;3, корп.&nbsp;2, стр.&nbsp;9 (м.&nbsp;Нагатинская)
+                        tr
+                            td.title Время работы:
+                            td ежедневно с&nbsp;9&nbsp;до&nbsp;20&nbsp;ч.
+                        tr
+                            td.title Прием заказов:
+                            td без обеденных перерывов
+                        tr
+                            td.title Телфон:
+                            td
+                                a(href="tel:84952204570") +7(495)220-45-70,
+                                a(href="tel:89852204570") +7(985)220-45-70
+                        tr
+                            td.title E-mail:
+                            td
+                                a(href="mailto:info@domashniy-uyut.net") info@domashniy-uyut.net
+                        tr
+                            td.title Организация:
+                            td ООО &laquo;Торэс Строй&raquo;
+                        tr
+                            td.title Реквизиты:
+                            td
+                                span Юр. адрес: 115230 г.Москва, Каширское&nbsp;ш., д.3, к.2,с.9
+                                span ИНН: 7726279813&nbsp;КПП: 772401001&nbsp;ОГРН: 1027739855032
+                                span р/с: 40702810900000415701&nbsp;к/с: 30101810600000000119
+                                span БИК: 044583119&nbsp;Банк: ОАО &laquo;Промсвязьбанк&raquo; г. Москва
+
+                    p Мы&nbsp;работаем по&nbsp;Москве и&nbsp;Московской области до&nbsp;30&nbsp;км от&nbsp;МКАД. Заказы из&nbsp;ближайших областей рассматриваются индивидуально! Стоимость выезда инженера-консультанта на замер&nbsp;&mdash; 500&nbsp;р. Эта сумма вычитается из&nbsp;стоимости заказа при составлении договора.
+
+                .one-half
+                    div(id="contacts-map").contacts--map
+
+            .contacts--btn
+                a(href="../pagePopup/pagePopup-question.html" class="fancybox.ajax" title="Вопрос специалисту").fancy.btn.btn-border Задать вопрос
+
+    script(type="text/javascript" src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script(type="text/javascript" ) $(function(){$.pixlayout({src: "../../../img/temp/contacts.jpg",opacity: 0.5,top: -2,left: 0,center: false,clip: true,show: false});});
+
+
+
+
+

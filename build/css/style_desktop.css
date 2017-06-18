@@ -1,0 +1,326 @@
+@font-face {
+  font-family: 'als_rublregular';
+  src: url("../fnt/rouble-webfont.eot");
+  src: url("../fnt/rouble-webfont.eot?#iefix") format('embedded-opentype'), url("../fnt/rouble-webfont.woff2") format('woff2'), url("../fnt/rouble-webfont.woff") format('woff'), url("../fnt/rouble-webfont.ttf") format('truetype'), url("../fnt/rouble-webfont.svg#als_rublregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fnt/Lato/LatoRegular/LatoRegular.eot");
+  src: url("../fnt/Lato/LatoRegular/LatoRegular.eot?#iefix") format("embedded-opentype"), url("../fnt/Lato/LatoRegular/LatoRegular.woff") format("woff"), url("../fnt/Lato/LatoRegular/LatoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fnt/Lato/LatoBold/LatoBold.eot");
+  src: url("../fnt/Lato/LatoBold/LatoBold.eot?#iefix") format("embedded-opentype"), url("../fnt/Lato/LatoBold/LatoBold.woff") format("woff"), url("../fnt/Lato/LatoBold/LatoBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fnt/Lato/LatoLight/LatoLight.eot");
+  src: url("../fnt/Lato/LatoLight/LatoLight.eot?#iefix") format("embedded-opentype"), url("../fnt/Lato/LatoLight/LatoLight.woff") format("woff"), url("../fnt/Lato/LatoLight/LatoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+html * {
+  max-height: 999999px;
+  -webkit-font-smoothing: antialiased;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 960px;
+}
+body {
+  font-family: $fAcrom;
+  font-size: 14px;
+  color: #010101;
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+}
+.page-wrap {
+  min-height: 100%;
+  position: relative;
+  min-width: 1200px;
+  overflow: hidden;
+}
+form,
+p,
+ul,
+ol,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  list-style: none;
+}
+a img {
+  border: none;
+}
+input,
+textarea {
+  font-family: 'Open Sans', sans-serif;
+  color: #010101;
+  outline: none;
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  outline: none;
+  color: #2b3e69;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  color: $cGreen;
+}
+.wrapper {
+  overflow: hidden;
+}
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+.clearfix:after,
+.section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.section {
+  position: relative;
+}
+.justifyed {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.width-wrap {
+  display: block;
+  margin: 0 auto;
+  width: 1140px;
+}
+ol,
+ul,
+.grid {
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: -1px;
+}
+li,
+.grid-item {
+  line-height: normal;
+  letter-spacing: normal;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+}
+.hidden-block {
+  display: none !important;
+}
+.two--third {
+  width: 760px;
+}
+.roubl:after {
+  content: " o";
+  font-size: inherit;
+  color: inherit;
+  font-family: als_rublregular;
+  font-weight: inherit;
+}
+a,
+p,
+span,
+li,
+input,
+time,
+blockquote,
+textarea {
+  font-family: LatoRegular, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #010101;
+}
+a {
+  cursor: pointer;
+}
+h1 {
+  font-family: LatoRegular, sans-serif;
+  color: #010101;
+  font-size: 48px;
+  line-height: 73px;
+  text-align: left;
+  display: block;
+  font-weight: bold;
+}
+h2 {
+  font-family: LatoRegular, sans-serif;
+  color: #010101;
+  font-size: 30px;
+  display: block;
+  font-weight: bold;
+}
+.btn {
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  color: #010101;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+  border-radius: 10px;
+  padding: 0;
+  outline: none;
+  font-weight: bold;
+  background: #ffd200;
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
+  display: inline-block;
+}
+.btn:hover {
+  text-decoration: none;
+  box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+}
+.btn:active {
+  text-decoration: none;
+  box-shadow: inset 3px 3px 0 #e8bf00;
+}
+.btn_disabled,
+.btn[disabled] {
+  background: #cfcfcf;
+  box-shadow: none;
+}
+.btn_l {
+  padding: 0 24px;
+  height: 51px;
+  line-height: 52px;
+}
+.btn_s {
+  padding: 0 18px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+}
+.btn.disable {
+  background: #555150;
+  color: #fff;
+}
+.btn_c_blue {
+  background: #2b3e69;
+  color: #fff !important;
+}
+.btn_c_blue-l {
+  background: #4a90e2;
+}
+.btn.disable:active {
+  box-shadow: none;
+}
+.form-item {
+  margin-bottom: 17px;
+  position: relative;
+  display: block;
+}
+.form-lbl {
+  font-size: 13px;
+  color: $cGrey;
+  margin-bottom: 3px;
+}
+.form-descr {
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+  padding-top: 8px;
+}
+.form-descr_error {
+  color: #ff7f7f;
+}
+.inp {
+  box-sizing: border-box;
+  background: $cWhite;
+  box-shadow: none;
+  outline: none;
+  width: 355px;
+  height: 40px;
+  display: block;
+  padding-left: 15px;
+  font-size: 20px;
+  color: #010101;
+  border: 2px solid $cWhite;
+  border-radius: 0;
+  -webkit-appearance: none;
+  transition-property: background-color border-color;
+  transition-duration: 0.4s;
+  font-family: $fFutura;
+}
+.inp::-webkit-input-placeholder {
+  opacity: 1;
+  color: #747474;
+  font-family: $fFutura;
+}
+.inp::-moz-placeholder {
+  opacity: 1;
+  color: #747474;
+  font-family: $fFutura;
+}
+.inp:-ms-input-placeholder {
+  opacity: 1;
+  color: #747474;
+  font-family: $fFutura;
+}
+.inp::placeholder {
+  opacity: 1;
+  color: #747474;
+  font-family: $fFutura;
+}
+.inp:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+.inp:focus::-moz-placeholder {
+  opacity: 0;
+}
+.inp:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+.inp:focus::placeholder {
+  opacity: 0;
+}
+.inp.error {
+  border: 2px solid #f00 !important;
+}
